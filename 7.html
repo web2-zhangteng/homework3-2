@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1">
+		<title>QQ注册验证</title>
+    <style>
+	   body{
+	   	 background: url(body.png) repeat-x;
+	   }
+    </style>
+	</head>
+	<body>
+		
+		<img src="bg_chs.png"  />
+		<h2>注册账号</h2>
+		<form method="post" action="">
+			<label for="nicheng">昵称</label>
+			<input type="text" id="nicheng" required="required" pattern="[-\w\u4E00-\u9FA5]{4,10}"  /> 长度为4-10个字符<br /><br />
+			<label for="mima">密码</label>
+			<input type="password" id="mima" required="required" pattern="[\dA-Za-z]{6,16}"  /> 长度为6-16个字符<br /><br />
+			<label for="mima2">确认密码</label>
+			<input type="password" id="mima2" required="required" pattern="[\dA-Za-z]{6,16}"  /> 长度为6-16个字符<br /><br />
+			<label for="haoma">手机号码 </label>
+			<input type="tel" id="haoma" required="required" pattern="1[3578]\d{9}"  /> 密码长度为11位，以13|5|7|8开头<br /><br />
+				<label for="youxiang">邮箱 </label>
+			<input type="email" id="youxiang" required="required" pattern="\w+@\w+(\.[a-z]{2,4}){1,2}"  /> <br /><br />
+				<label for="nianling">年龄  </label>
+			<input type="text" id="nianying" required="required" pattern="\d|[1-9]\d|1[0-2]\d"  /> <br /><br />
+			<input type="image" src="btn.jpg"  />
+		</form>
+	</body>
+</html>
